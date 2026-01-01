@@ -1,0 +1,64 @@
+.lessonContainer {
+  margin: 2rem 0;
+}
+
+.lessonSection {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.lessonSection:last-child {
+  border-bottom: none;
+}
+
+.lessonIntro {
+  background-color: var(--ifm-color-emphasis-100);
+  border-left: 4px solid var(--ifm-color-primary);
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.toolsSection {
+  background-color: var(--ifm-color-emphasis-100);
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.architectureDiagram {
+  background-color: var(--ifm-color-emphasis-100);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 4px;
+  padding: 1rem;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.relevanceSection {
+  background-color: var(--ifm-color-emphasis-100);
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.learningOutcomes {
+  background-color: var(--ifm-color-info-background);
+  border-left: 4px solid var(--ifm-color-info);
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.outcomeList {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.outcomeItem {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.outcomeIcon {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}

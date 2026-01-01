@@ -1,55 +1,64 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!-- SYNC IMPACT REPORT
+Version change: N/A → 1.0.0
+Modified principles: N/A (New constitution)
+Added sections: All principles and sections for AI-Native Technical Book on Physical AI & Humanoid Robotics
+Removed sections: N/A
+Templates requiring updates: ⚠ pending - .specify/templates/plan-template.md, .specify/templates/spec-template.md, .specify/templates/tasks-template.md
+Follow-up TODOs: None
+-->
+# AI-Native Technical Book on Physical AI & Humanoid Robotics Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Accuracy
+All technical explanations must be correct and industry-aligned. Every concept, tool, and workflow described in the book must reflect real-world implementations and current best practices in the field of Physical AI and Humanoid Robotics.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Clarity
+Concepts explained step-by-step with simple language. All content must be accessible to undergraduate-level learners with clear explanations, avoiding unnecessary jargon, and explaining acronyms on first use.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Practical Orientation
+Focus on real tools, workflows, and architectures. Content must emphasize hands-on learning with actual tools like ROS 2, Gazebo, NVIDIA Isaac, and Unity rather than theoretical concepts alone.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. AI-Native Thinking
+Emphasize agent-based systems, autonomy, and cognition. The book must integrate AI and machine learning concepts seamlessly into robotics, focusing on embodied intelligence and autonomous decision-making capabilities.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Open Learning
+Content should be reusable and teachable. All materials must be structured to enable educators to use them for courses, workshops, and self-directed learning.
 
-### [PRINCIPLE_6_NAME]
+### VI. Industry Relevance
+All tools and technologies featured must be currently used in the robotics industry. No fictional APIs or libraries should be introduced; all commands, configurations, and workflows must represent realistic implementations.
 
+## Technical Standards
+- Content must be written using Docusaurus (Markdown-based documentation)
+- Organized into logical chapters and modules with clear headings, subheadings, diagrams (described), and examples
+- Each module must include: Concept explanation, Tool overview, Practical workflow or architecture, Learning outcomes
+- Commands, configs, and workflows must be realistic and tested
+- Focus on architecture and concepts rather than over-implementation
 
-[PRINCIPLE__DESCRIPTION]
+## Scope & Constraints
+- Project scope is limited to book creation only
+- No RAG chatbot or backend implementation at this stage
+- No deployment instructions beyond GitHub Pages
+- No marketing or promotional language inside chapters
+- Content must align with Panaversity's Physical AI & Humanoid Robotics quarter
+- Target audience: Undergraduate-level to early professional learners with background in AI, Computer Science, or Engineering
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## Content Structure
+The book must include the following mandatory modules:
+1. Introduction to Physical AI & Embodied Intelligence
+2. ROS 2 as the Robotic Nervous System (Nodes, Topics, Services; rclpy and Python-based control; URDF for humanoid robots)
+3. Digital Twins & Simulation (Gazebo physics simulation; Unity for human-robot interaction; Sensor simulation)
+4. AI Robot Brain with NVIDIA Isaac (Isaac Sim and synthetic data; Isaac ROS; Nav2 for humanoid navigation)
+5. Vision-Language-Action (Voice-to-action pipelines; LLM-based planning; Natural language → ROS action mapping)
+6. Capstone Overview (Autonomous humanoid architecture; Voice command → perception → planning → manipulation)
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+## Development Workflow
+- Content development follows a modular approach with each chapter developed independently but maintaining consistency
+- Regular reviews by domain experts to ensure technical accuracy
+- All examples and code snippets must be tested in real environments or simulations
+- Documentation must be suitable for both self-learning and classroom instruction
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
+This constitution serves as the foundational document governing all aspects of the AI-Native Technical Book on Physical AI & Humanoid Robotics project. All content, structure, and development decisions must align with the principles outlined herein. Amendments to this constitution require documentation of the change, justification for the amendment, and approval from the project leadership team.
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
-
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: TODO(RATIFICATION_DATE): Date of original adoption | **Last Amended**: 2025-12-20
